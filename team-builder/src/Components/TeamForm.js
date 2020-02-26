@@ -17,19 +17,19 @@ function TeamForm(props) {
     const submitForm = event => {
         event.preventDefault();
         props.addNewMember(teamMember);
-        setTeamMember({name: '', rank: ''});
+        setTeamMember({fname: '', rank: ''});
     }
 
     return (
         <form onSubmit={submitForm}>
-            <label htmlFor='fname'>Name</label>
+            <label htmlFor='fname'>Name:</label>
             <input id='fname'
              type='text'
              name='fname' 
              onChange={changeHandler}
              value={teamMember.fname}></input>
 
-             <label htmlFor='rank'>Rank</label>
+             <label htmlFor='rank'>Rank:</label>
              <input id='rank'
              type='textarea'
              name='rank'

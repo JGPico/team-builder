@@ -8,14 +8,14 @@ import './App.css';
 function App() {
   const [teamMembers, setTeamMembers] = useState([{
     id: 1,
-    name: 'James',
-    rank: 'Dashing',
+    fname: 'James',
+    rank: 'Master and Commander',
   }]);
 
   function addNewMember (member) {
     const newMember = {
       id: Date.now(),
-      name: member.name,
+      fname: member.fname,
       rank: member.rank
     };
     setTeamMembers([...teamMembers, newMember]);

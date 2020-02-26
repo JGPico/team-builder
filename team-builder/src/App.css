@@ -1,38 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: 'Oxanium', cursive;
+  text-align: center;
+  background-image: linear-gradient(-315deg, #7afcff 40%,#41b6d7 100%);
+  padding: 32px;
+  letter-spacing: 2px;
   min-height: 100vh;
+}
+
+.member-holder {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.member {
+  background: #dda327;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 5px 2px rgba(0, 0, 0, 0.24);
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  margin: 16px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+  background: #60b313;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 5px 2px rgba(0, 0, 0, 0.24);
 }
+
+label, button {
+  margin: 10px;
+}
+
+
