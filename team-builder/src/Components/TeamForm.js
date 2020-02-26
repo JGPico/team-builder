@@ -2,8 +2,8 @@ import React, {useState} from "react";
 
 function TeamForm(props) {
     const [teamMember, setTeamMember] = useState({
-        fname: 'James',
-        rank: 'Dashing'
+        fname: '',
+        rank: ''
     })
 
     const changeHandler = event => {
@@ -16,6 +16,8 @@ function TeamForm(props) {
 
     const submitForm = event => {
         event.preventDefault();
+        props.addNewMember(teamMember);
+        setTeamMember({name: '', rank: ''});
     }
 
     return (
@@ -29,15 +31,15 @@ function TeamForm(props) {
 
              <label htmlFor='rank'>Rank</label>
              <input id='rank'
-             type='text'
+             type='textarea'
              name='rank'
              onChange={changeHandler}
              value={teamMember.rank}></input>
+
+             <button type='submit'>Add Member</button>
         </form>
     )
 
 }
-
-
 
 export default TeamForm;
