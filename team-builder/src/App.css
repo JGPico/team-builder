@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Oxanium', cursive;
+  text-align: center;
+  background-image: linear-gradient(-315deg, #7afcff 40%,#41b6d7 100%);
+  padding: 32px;
+  letter-spacing: 2px;
+  min-height: 100vh;
+}
+
+.member-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #dda327;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 5px 2px rgba(0, 0, 0, 0.24);
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  margin: 16px auto;
+}
+
+.button-holder {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.edit-button{
+  width: 100%;
+  background: #60b313;
+  height: 30px;
+  font-family: 'Oxanium', cursive;
+  font-size: 16px;
+}
+
+form {
+  background: #60b313;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 5px 2px rgba(0, 0, 0, 0.24);
+}
+
+label, button {
+  margin: 10px;
+}
+
+
