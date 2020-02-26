@@ -17,12 +17,29 @@
 }
 
 .member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #dda327;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 5px 2px rgba(0, 0, 0, 0.24);
   width: 100%;
   max-width: 250px;
   padding: 10px;
   margin: 16px auto;
+}
+
+.button-holder {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.edit-button{
+  width: 100%;
+  background: #60b313;
+  height: 30px;
+  font-family: 'Oxanium', cursive;
+  font-size: 16px;
 }
 
 form {
